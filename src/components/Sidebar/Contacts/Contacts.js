@@ -6,7 +6,7 @@ import styles from './Contacts.module.scss';
 
 type Props = {
   contacts: {
-    [string]: string,
+    [key: string]: string,
   },
 };
 
