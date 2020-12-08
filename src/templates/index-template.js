@@ -8,7 +8,7 @@ import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
-
+import { query as pageQuery } from './page-template';
 type Props = {
   data: AllMarkdownRemark,
   pageContext: PageContext
@@ -16,39 +16,31 @@ type Props = {
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { html: pageBody } = data.markdownRemark;
   return (
     <Layout title={siteTitle} description={siteSubtitle}>
       <Sidebar isIndex />
       <Page>
+        <div dangerouslySetInnerHTML={{ __html: pageBody }} />
       </Page>
     </Layout>
   );
 };
 
-export const query = graphql`
-  query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
-    allMarkdownRemark(
-        limit: $postsLimit,
-        skip: $postsOffset,
-        filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ){
-      edges {
-        node {
-          fields {
-            slug
-            categorySlug
-          }
-          frontmatter {
-            title
-            date
-            category
-            description
-          }
+export const query = graphql`{
+  markdownRemark(fields: { slug: { eq: "/pages/about/" } }) {
+      id
+      html
+      frontmatter {
+        title
+        date
+        description
+        socialImage {
+          publicURL
         }
       }
     }
-  }
+}
 `;
 
 export default IndexTemplate;
