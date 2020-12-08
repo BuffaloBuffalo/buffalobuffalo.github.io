@@ -14,19 +14,38 @@ type Props = {
   pageContext: PageContext
 };
 
-const IndexTemplate = ({ data, pageContext }: Props) => {
+const PostsTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+
+  const {
+    currentPage,
+    hasNextPage,
+    hasPrevPage,
+    prevPagePath,
+    nextPagePath
+  } = pageContext;
+
+  const { edges } = data.allMarkdownRemark;
+  const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
+
   return (
-    <Layout title={siteTitle} description={siteSubtitle}>
-      <Sidebar isIndex />
+    <Layout title={pageTitle} description={siteSubtitle}>
+      <Sidebar />
       <Page>
+        <Feed edges={edges} />
+        <Pagination
+          prevPagePath={prevPagePath}
+          nextPagePath={nextPagePath}
+          hasPrevPage={hasPrevPage}
+          hasNextPage={hasNextPage}
+        />
       </Page>
     </Layout>
   );
 };
 
 export const query = graphql`
-  query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
+  query PostsTemplate($postsLimit: Int!, $postsOffset: Int!) {
     allMarkdownRemark(
         limit: $postsLimit,
         skip: $postsOffset,
@@ -51,4 +70,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexTemplate;
+export default PostsTemplate;
