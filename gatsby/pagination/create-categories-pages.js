@@ -1,7 +1,8 @@
 'use strict';
-import _ from 'lodash';
-import path from 'path';
-import siteConfig from '../../config';
+
+const _ = require('lodash');
+const path = require('path');
+const siteConfig = require('../../config.js');
 
 module.exports = async (graphql, actions) => {
   const { createPage } = actions;
