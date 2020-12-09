@@ -2,6 +2,7 @@
 
 module.exports = {
   rootDir: '../',
+  preset: 'ts-jest',
   transform: {
     '^.+\\.js?$': '<rootDir>/jest/jest-preprocess.js'
   },

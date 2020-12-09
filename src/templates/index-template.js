@@ -7,10 +7,9 @@ import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
-import type { PageContext, AllMarkdownRemark } from '../types';
-import { query as pageQuery } from './page-template';
+import type { PageContext, MarkdownRemark } from '../types';
 type Props = {
-  data: AllMarkdownRemark,
+  data: MarkdownRemark,
   pageContext: PageContext
 };
 
