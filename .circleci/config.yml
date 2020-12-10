@@ -2,8 +2,8 @@ version: 2
 
 defaults: &defaults
   docker:
-    - image: circleci/node:15.2.0
-  working_directory: ~/gatsby-starter-lumen
+    - image: circleci/node:12.20.0-browsers
+  working_directory: ~/jeffrey-keller-personal-site
 
 jobs:
   install:
