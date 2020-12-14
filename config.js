@@ -12,6 +12,10 @@ module.exports = {
   useKatex: false,
   menu: [
     {
+      label: 'Posts',
+      path: '/posts'
+    },
+    {
       label: 'About me',
       path: '/'
     },
@@ -23,7 +27,7 @@ module.exports = {
   author: {
     name: 'Jeff Keller',
     photo: '/photo.jpeg',
-    bio: 'Engineer @ Zappos, Pizza and Wing aficionado',
+    bio: 'Engineer @ Zappos, Pizza and Wing nerd',
     contacts: {
       email: 'jeff@jeffreykeller.com',
       facebook: '',

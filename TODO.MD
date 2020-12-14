@@ -4,3 +4,4 @@
 * Fix post pagination
 * Tags / Categories?
 * fully rip out flow
+* figure out flex images
