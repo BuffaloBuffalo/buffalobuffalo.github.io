@@ -4,10 +4,13 @@ template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+I am a Software Engineer at Zappos (all thoughts here are my own). My hobbies include exercising, video games, and baking.  Up until recently my exercise regimen was almost entirely lifting and recreational boxing, but due to *unprecedented times* I got heavily into running.  I ran my first (and thirteenth) half-marathon in 2020.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+<div>
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+![Lockport 10 Run](/media/running/lock10.jpeg)
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+![Backyard training run](/media/running/backyard.jpeg)
+
+</div>
+While I enjoy baking  I'm really only competent at making chocolate chip cookies and chocolate cake. I've dabbled in making my own pizza dough this summer but have yet to produce anything of note.  I'm in the process of trying wings at every major place known for wings in the area.  It's a long list.  I've had limited success grilling and baking wings at home, but have yet to find wing meat that is on par with what the local restaurants serve.
