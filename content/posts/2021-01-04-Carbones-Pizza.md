@@ -26,7 +26,7 @@ They have online ordering through [Slice](https://slicelife.com/restaurants/ny/b
 
 ## First Impressions
 
-This is a good looking pie in the box.  The pepperoni has a slight cup to it, but I wouldn't consider it the full buffalo cup and char.  The bottom is slightly charred, but not burnt.
+This is a good looking pie in the box.  The pepperoni has a slight cup to it, but I wouldn't consider it the full buffalo cup and char.  The pizza has a good amount of Pepperoni distributed on the pie as well.  Niether overdoing it nor skimping.  The bottom is slightly charred, but not burnt.
 
 ![crust](/media/pizza/carbones/crust.jpeg)
 
