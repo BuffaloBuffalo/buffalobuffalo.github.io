@@ -8,7 +8,7 @@ I am a Software Engineer at Zappos (all thoughts here are my own). My hobbies in
 
 <div>
 
-![Lockport 10 Run](/media/running/lock10.jpeg)
+![Lockport 10 Run](/media/running/lock10.jpg)
 
 ![Backyard training run](/media/running/backyard.jpeg)
 
