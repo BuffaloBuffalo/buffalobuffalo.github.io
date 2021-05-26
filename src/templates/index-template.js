@@ -5,13 +5,8 @@ import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
 import { useSiteMetadata } from '../hooks';
-import type { PageContext, MarkdownRemark } from '../types';
-type Props = {
-  data: MarkdownRemark,
-  pageContext: PageContext
-};
 
-const IndexTemplate = ({ data }: Props) => {
+const IndexTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   const { html: pageBody } = data.markdownRemark;
   return (
