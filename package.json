@@ -17,7 +17,7 @@
     "test:update-snapshot": "jest --config ./jest/jest-config.js --updateSnapshot",
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
     "test:watch": "jest --watch --config ./jest/jest-config.js",
-    "type-check": "tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "repository": "https://github.com/BuffaloBuffalo/personal-site",
   "author": "Jeff Keller <jeff@jeffreykeller.com>",
@@ -74,9 +74,9 @@
     "normalize-scss": "^7.0.1",
     "postcss": "^8.2.6",
     "prismjs": "^1.22.0",
-    "react": "^16.14.0",
+    "react": "^17.0.2",
     "react-disqus-comments": "^1.4.0",
-    "react-dom": "^16.14.0",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
@@ -93,10 +93,9 @@
     "@types/katex": "^0.11.0",
     "@types/lodash": "^4.14.165",
     "@types/prismjs": "^1.16.2",
-    "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.9",
+    "@types/react": "^17.0.8",
+    "@types/react-dom": "^17.0.5",
     "@types/react-helmet": "^6.1.0",
-    "@types/react-test-renderer": "^16.9.3",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.7.0",
     "autoprefixer": "9.8.6",
@@ -121,7 +120,7 @@
     "jest-cli": "26.6.3",
     "lost": "8.3.1",
     "postcss-pxtorem": "5.1.1",
-    "react-test-renderer": "^16.14.0",
+    "react-test-renderer": "^17.0.2",
     "rimraf": "3.0.2",
     "sass": "^1.34.0",
     "stylelint": "13.7.2",
@@ -129,5 +128,8 @@
     "stylelint-scss": "3.18.0",
     "ts-jest": "^26.4.4",
     "typescript": "^4.0.5"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.8"
   }
 }
