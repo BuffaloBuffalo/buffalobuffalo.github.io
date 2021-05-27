@@ -5,8 +5,6 @@ import Helmet from 'react-helmet';
 import { useSiteMetadata } from '../../hooks';
 import * as styles from './Layout.module.scss';
 
-
-console.log('styles = ', styles);
 // type Props = {
 //   children: ReactNode,
 //   title: string,
