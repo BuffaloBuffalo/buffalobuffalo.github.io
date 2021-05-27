@@ -1,15 +1,15 @@
-// @flow strict
+
 import React from 'react';
 import { Link } from 'gatsby';
-import type { Edges } from '../../types';
-import styles from './Feed.module.scss';
+// import type { Edges } from '../../types';
+import * as styles from './Feed.module.scss';
 import { formatMonthSummaryDisplay, formatMicrodataDate } from '../../utils/date-utils';
 
-type Props = {
-  edges: Edges
-};
+// type Props = {
+//   edges: Edges
+// };
 
-const Feed = ({ edges }: Props) => (
+const Feed = ({ edges }) => (
   <div className={styles['feed']}>
     {edges.map((edge) => (
       <div className={styles['feed__item']} key={edge.node.fields.slug}>

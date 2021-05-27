@@ -1,4 +1,4 @@
-// @flow strict
+
 import React from 'react';
 import { Link } from 'gatsby';
 import Author from './Author';
@@ -6,14 +6,14 @@ import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
-import styles from './Post.module.scss';
-import type { Node } from '../../types';
+import * as styles from './Post.module.scss';
+// import type { Node } from '../../types';
 
-type Props = {
-  post: Node
-};
+// type Props = {
+//   post: Node
+// };
 
-const Post = ({ post }: Props) => {
+const Post = ({ post }) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
