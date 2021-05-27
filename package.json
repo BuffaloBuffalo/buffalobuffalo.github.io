@@ -35,8 +35,7 @@
     "minimal",
     "react",
     "theme",
-    "starter",
-    "disqus"
+    "starter"
   ],
   "dependencies": {
     "bluebird": "^3.7.2",
@@ -75,7 +74,6 @@
     "postcss": "^8.2.6",
     "prismjs": "^1.22.0",
     "react": "^17.0.2",
-    "react-disqus-comments": "^1.4.0",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
   },
