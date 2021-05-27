@@ -62,6 +62,5 @@ exports[`Post renders correctly 1`] = `
       </p>
     </div>
   </div>
-  <div />
 </div>
 `;
