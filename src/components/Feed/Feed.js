@@ -13,20 +13,20 @@ const Feed = ({ edges }) => (
   <div className={styles['feed']}>
     {edges.map((edge) => (
       <div className={styles['feed__item']} key={edge.node.fields.slug}>
-        <div className={styles['feed__item-meta']}>
-          <time className={styles['feed__item-meta-time']} dateTime={ formatMicrodataDate(edge.node.frontmatter.date)}>
+        <div className={styles['feed__itemMeta']}>
+          <time className={styles['feed__itemMetaTime']} dateTime={ formatMicrodataDate(edge.node.frontmatter.date)}>
           { formatMonthSummaryDisplay(edge.node.frontmatter.date)}
           </time>
-          <span className={styles['feed__item-meta-divider']} />
-          <span className={styles['feed__item-meta-category']}>
-            <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
+          <span className={styles['feed__itemMetaDivider']} />
+          <span className={styles['feed__itemMetaCategory']}>
+            <Link to={edge.node.fields.categorySlug} className={styles['feed__itemMetaCategoryLink']}>{edge.node.frontmatter.category}</Link>
           </span>
         </div>
-        <h2 className={styles['feed__item-title']}>
-          <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
+        <h2 className={styles['feed__itemTitle']}>
+          <Link className={styles['feed__itemTitleLink']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
-        <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
+        <p className={styles['feed__itemDescription']}>{edge.node.frontmatter.description}</p>
+        <Link className={styles['feed__itemReadmore']} to={edge.node.fields.slug}>Read</Link>
       </div>
     ))}
   </div>
