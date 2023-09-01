@@ -4,7 +4,7 @@ template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-I am a Software Engineer at Zappos (all thoughts here are my own). My hobbies include exercising, video games, and baking.  Up until recently my exercise regimen was almost entirely lifting and recreational boxing, but due to *unprecedented times* I got heavily into running.  I ran my first (and thirteenth) half-marathon in 2020.
+I am a Software Engineer at Delphi Digital (formerly @ Zappos). My hobbies include exercising, video games, and baking. Up until recently my exercise regimen was almost entirely lifting and recreational boxing, but due to _unprecedented times_ I got heavily into running. I ran my first (and thirteenth) half-marathon in 2020.
 
 <div>
 
