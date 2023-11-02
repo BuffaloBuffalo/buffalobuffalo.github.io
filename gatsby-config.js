@@ -104,12 +104,6 @@ module.exports = {
         plugins: [
           'gatsby-remark-relative-images',
           {
-            resolve: 'gatsby-remark-katex',
-            options: {
-              strict: 'ignore'
-            }
-          },
-          {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
@@ -158,7 +152,6 @@ module.exports = {
         `,
         output: '/sitemap.xml',
         serialize: (data) => {
-          console.log('wtf = ',data);
           return {
             url: data.path,
             changefreq: 'daily',
