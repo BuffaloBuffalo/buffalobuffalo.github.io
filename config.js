@@ -26,7 +26,7 @@ module.exports = {
   author: {
     name: 'Jeff Keller',
     photo: '/photo.jpeg',
-    bio: 'Engineer @ Delphi Digital, Pizza and Wing nerd',
+    bio: 'Engineer @ Zappos, Pizza and Wing nerd',
     contacts: {
       email: 'jeff@jeffreykeller.com',
       facebook: '',
