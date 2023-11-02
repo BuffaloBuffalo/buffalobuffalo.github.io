@@ -44,30 +44,28 @@ const PostsTemplate = ({ data, pageContext }) => {
   );
 };
 
-export const query = graphql`
-  query PostsTemplate($postsLimit: Int!, $postsOffset: Int!) {
-    allMarkdownRemark(
-        limit: $postsLimit,
-        skip: $postsOffset,
-        filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ){
-      edges {
-        node {
-          fields {
-            slug
-            categorySlug
-          }
-          frontmatter {
-            title
-            date
-            category
-            description
-          }
+export const query = graphql`query PostsTemplate($postsLimit: Int!, $postsOffset: Int!) {
+  allMarkdownRemark(
+    limit: $postsLimit
+    skip: $postsOffset
+    filter: {frontmatter: {template: {eq: "post"}, draft: {ne: true}}}
+    sort: {frontmatter: {date: DESC}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+          categorySlug
+        }
+        frontmatter {
+          title
+          date
+          category
+          description
         }
       }
     }
   }
-`;
+}`;
 
 export default PostsTemplate;

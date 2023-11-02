@@ -14,6 +14,7 @@ module.exports = {
     menu: siteConfig.menu,
     author: siteConfig.author
   },
+  trailingSlash: 'never',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
@@ -68,31 +69,29 @@ module.exports = {
               custom_elements: [{ 'content:encoded': edge.node.html }]
             }))
           ),
-          query: `
-              {
-                allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
-                ) {
-                  edges {
-                    node {
-                      html
-                      fields {
-                        slug
-                      }
-                      frontmatter {
-                        title
-                        date
-                        template
-                        draft
-                        description
-                      }
-                    }
-                  }
-                }
-              }
-            `,
+          query: `{
+  allMarkdownRemark(
+    limit: 1000
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {template: {eq: "post"}, draft: {ne: true}}}
+  ) {
+    edges {
+      node {
+        html
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+          template
+          draft
+          description
+        }
+      }
+    }
+  }
+}`,
           output: '/rss.xml',
           title: siteConfig.title
         }]
